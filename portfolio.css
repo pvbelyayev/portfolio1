@@ -1,0 +1,256 @@
+
+body {
+  background-color:#939597;
+}
+
+/* NAVBAR */
+
+
+.navbar {
+  display: flex;
+  height: 45px;
+  justify-content: flex-end;
+}
+
+
+
+.navbar-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-link a {
+  display: inline-block;
+  padding: 5px 15px;
+  text-decoration: none;
+  color: white;
+}
+
+
+
+
+
+/* FIRST PAGE */
+
+#firstpage {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+ 
+  background: url('https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-repeat: no-repeat;
+  background-size: 500px 350px; 
+  background-position: 800px 300px;
+  margin-bottom: 50px; 
+  background-color:#939597;
+}
+
+.name span {
+  color: #cf3b28;
+}
+
+.name {
+  width: 500px;
+  top: 20%;
+  left: 4%;
+  margin-right: 20px;
+  font-size: 100px;
+  text-align: left;
+  position: relative;
+  font-family: Futura;
+  background-color: black;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0px 1px 0px rgba(255,255,255,.3), 0px -1px 0px rgba(0,0,0,.7);
+}
+
+/* SECOND PAGE */
+
+
+
+#secondpage {
+height: 100%;
+width: 100%;
+display: grid;
+grid-template-columns: 1fr 1fr 9r ;
+grid-template-rows: 3fr ;
+margin: 1em;
+grid-gap: 2em;
+background-color:#939597;
+}
+
+img {
+  grid-row: 2;
+  grid-column: 2;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 550px;
+}
+
+.name2 {
+  grid-row: 1;
+  grid-column: 2;
+  font-family: Futura;
+  width: 500px;
+  color: #cf3b28;
+  font-weight: 300;
+  font-size: 100px;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  text-shadow: 0px 1px 0px rgba(255,255,255,.3), 0px -1px 0px rgba(0,0,0,.7);
+}
+
+.aboutmesection {
+grid-column: 3 / span 5;
+grid-row: 2 / span 1;
+color: white;
+}
+
+
+/* THIRD PAGE */
+
+
+#thirdpage {
+display: grid;
+grid-template-columns: 1fr 1fr 6fr;
+grid-template-rows: 1fr 4fr 2fr;
+margin: 3em;
+grid-gap: 1em;
+}
+
+.name3 {
+  grid-column: 1;
+  grid-row: 2;
+  font-family: Futura;
+  width: 500px;
+  color: #cf3b28;
+  font-weight: 300;
+  font-size: 100px;
+}
+
+.features {
+   grid-column: 4 / span 5;
+  grid-row: 2 / span 1;
+  width: 500px;
+  height: 500px;
+  background-color: white;  
+}
+
+
+.features p {
+  color: #000;
+  text-align: center;
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+
+.features img {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.box-items {
+  border:2px solid  #fff;
+  flex: 1 1 0;
+}
+
+/* CONTACT SECTION */
+
+.name4 {
+  padding-left: 50px;
+  width: 500px;
+  color: #cf3b28;
+  font-weight: 300;
+  font-size: 100px;
+  font-family: Futura;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #cf3b28;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: white;
+}
+
+/* Style the container/contact section */
+.contactContainer {
+  border-radius: 5px;
+  background-color:#939597;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/* SOCIAL MEDIA */
+
+.fa {
+  padding: 20px;
+  padding-left: 30px;
+  font-size: 30px;
+  width: 200px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* LinkedIn */
+.fa-linkedin {
+  background: #3B5998;
+  color: white;
+}
+
+/* GitHub */
+.fa-github {
+  background: #55ACEE;
+  color: white;
+}
